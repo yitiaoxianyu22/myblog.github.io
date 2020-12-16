@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JCE创建日志句柄失败【no such provider:*】 | 一条咸鱼的主页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/avatar.jpg">
+    <meta name="description" content="咸鱼也有梦想">
+    
+    <link rel="preload" href="/assets/css/0.styles.101e93c3.css" as="style"><link rel="preload" href="/assets/js/app.4cac5eca.js" as="script"><link rel="preload" href="/assets/js/2.b6794dca.js" as="script"><link rel="preload" href="/assets/js/18.daeea10d.js" as="script"><link rel="prefetch" href="/assets/js/10.cf3c3672.js"><link rel="prefetch" href="/assets/js/11.77a7f465.js"><link rel="prefetch" href="/assets/js/12.e88338c2.js"><link rel="prefetch" href="/assets/js/13.9b635540.js"><link rel="prefetch" href="/assets/js/14.8edbc3d0.js"><link rel="prefetch" href="/assets/js/15.d0292485.js"><link rel="prefetch" href="/assets/js/16.67c359b2.js"><link rel="prefetch" href="/assets/js/17.944e5c16.js"><link rel="prefetch" href="/assets/js/19.351f705c.js"><link rel="prefetch" href="/assets/js/20.41c3106b.js"><link rel="prefetch" href="/assets/js/3.b27e4937.js"><link rel="prefetch" href="/assets/js/4.d38cbe0d.js"><link rel="prefetch" href="/assets/js/5.1dde6f35.js"><link rel="prefetch" href="/assets/js/6.c9f44ce5.js"><link rel="prefetch" href="/assets/js/7.bfaa9e56.js"><link rel="prefetch" href="/assets/js/8.bd3c7dc0.js"><link rel="prefetch" href="/assets/js/9.9533cd4c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.101e93c3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一条咸鱼的主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/arts/2020/ARTS_1.html" class="nav-link">
+  ARTS总结
+</a></div><div class="nav-item"><a href="/blog/vue/1.vue中引入静态第三方js文件.html" class="nav-link">
+  博客
+</a></div> <a href="https://github.com/yitiaoxianyu22/myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/arts/2020/ARTS_1.html" class="nav-link">
+  ARTS总结
+</a></div><div class="nav-item"><a href="/blog/vue/1.vue中引入静态第三方js文件.html" class="nav-link">
+  博客
+</a></div> <a href="https://github.com/yitiaoxianyu22/myblog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>java相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/java/1.达梦数据库报错.html" class="sidebar-link">达梦数据库报错</a></li><li><a href="/blog/java/2.JCE创建日志句柄失败.html" class="active sidebar-link">JCE创建日志句柄失败【no such provider:*】</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/java/2.JCE创建日志句柄失败.html#问题" class="sidebar-link">问题</a></li><li class="sidebar-sub-header"><a href="/blog/java/2.JCE创建日志句柄失败.html#解决" class="sidebar-link">解决</a></li><li class="sidebar-sub-header"><a href="/blog/java/2.JCE创建日志句柄失败.html#结语" class="sidebar-link">结语</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="jce创建日志句柄失败【no-such-provider-】"><a href="#jce创建日志句柄失败【no-such-provider-】" class="header-anchor">#</a> JCE创建日志句柄失败【no such provider:***】</h1> <h2 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h2> <p>今天遇到一个问题，项目里用到JCE，需要将相应的jar包放到jdk/jre对应包下，这些都准备好了，而且一直以来开发环境都没问题，之前打包在本地部署有出过找不到JCE的情况，后来找前辈调好了（这个问题也顺便说一下吧，开发环境中我的项目用的是JDK，但是打包运行时找的是与JDK目录同级的jre，而我之前只更改了jdk下的jre里的包，所以打包运行时就会报找不到JCE）</p> <p>调好之后今天居然又出现了，而且我也不记得有改过什么，我自己反反复复又捣鼓了一会，还是不行，还把开发环境也搞坏了，最后还是找前辈解决了😚</p> <h2 id="解决"><a href="#解决" class="header-anchor">#</a> 解决</h2> <p>果然前辈就是前辈呀，看着报错信息，思考一会，又看到报错信息上一行有一句创建日志句柄失败，后面是想要创建的文件目录，资源管理器进入这个目录右键发现只能创建文件夹而不能创建文件，原来是权限问题，修改文件夹权限之后就好啦[]~(￣▽￣)~*</p> <h2 id="结语"><a href="#结语" class="header-anchor">#</a> 结语</h2> <p>因为我们安装jdk是一般都默认安装到c盘，这个时候就要注意文件夹的权限问题了，如果各种方式试过之后还是不行，就考虑一下权限问题吧😎</p> <p><em>通篇文字，只是想记录一下啦，免得下次再忘</em>（<em>＾-＾</em>）</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">12/16/2020, 3:49:27 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/java/1.达梦数据库报错.html" class="prev">
+        达梦数据库报错
+      </a></span> <span class="next"><a href="/blog/brower/1.Chrome浏览器console.log()失效【已解决】.html">
+        Chrome浏览器console.log()失效【已解决】
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4cac5eca.js" defer></script><script src="/assets/js/2.b6794dca.js" defer></script><script src="/assets/js/18.daeea10d.js" defer></script>
+  </body>
+</html>
